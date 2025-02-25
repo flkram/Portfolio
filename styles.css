@@ -1,15 +1,15 @@
 body {
-    font-family: Garamond, serif;
-    font-size: 18px;
+    /* font-family: Garamond, serif; */
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    background-color: #001f3f; /* Navy blue background */
+    background-color: #000000; /* Navy blue background */
     color: #f0f8ff; /* Alice blue for text */
 }
 
 header {
     text-align: center;
-    background-color: #349fc9; /* Darker navy blue */
+    background-color: #2f2f2f  ; /* Darker navy blue */
     color: #f0f8ff;
     padding: 20px 0;
 }
@@ -17,7 +17,7 @@ header {
 section {
     margin: 20px;
     padding: 20px;
-    background-color: #3468c9; /* Medium navy blue */
+    background-color: #2f2f2f; /* Medium navy blue */
     border-radius: 10px;
 }
 
@@ -40,13 +40,13 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #004080; /* Darker navy blue */
+    background-color: #6e6e6e; /* Darker navy blue */
     padding: 10px;
     border-radius: 8px;
 }
 
 button {
-    background-color: #0066cc; /* Bright blue */
+    background-color: #414141; /* Bright blue */
     color: #f0f8ff;
     border: none;
     padding: 8px 16px; /* Smaller button */
