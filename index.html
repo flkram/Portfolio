@@ -1,95 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Ramaswamy - Project Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash Ramaswamy · Portfolio</title>
+    <meta name="description" content="Portfolio of Akash Ramaswamy, a Computer Science student at North Carolina State University focused on software engineering, DevOps, and cloud-native systems." />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <section>
-        <h1 style="text-align: center;">Akash Ramaswamy Project Portfolio</h1>
-                <!-- Social Media Buttons Section -->
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/akash-ramaswamy-/" target="_blank" class="social-button">
-                        <img src="linkedin-logo.png" alt="LinkedIn Logo">
-                    </a>
-                    <a href="https://github.com/flkram" target="_blank" class="social-button">
-                        <img src="github-logo.png" alt="GitHub Logo">
-                    </a>
-                    <a href="https://leetcode.com/u/23akashram/" target="_blank" class="social-button">
-                        <img src="leetcode-logo.png" alt="LeetCode Logo">
-                    </a>
-                </div>
-    </section>
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a Computer Science student at North Carolina State University with a strong passion for learning new skills and technologies. 
-            I enjoy expanding and refining my expertise by developing innovative projects and collaborating with others.
-            My interests span software development, DevOps, and cloud computing, and I enjoy tackling complex problems through creative and efficient solutions.
-            Below, I have outlined the projects I have worked on, along with the technologies and skills I have acquired throughout the process.
-            These experiences have helped me strengthen my technical abilities while also enhancing my problem-solving and teamwork skills. 
-            Please feel free to connect with me via GitHub or LinkedIn using the links provided above.
-        </p>
-    
-    </section>
-    <section class="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">         
-            <div class="project">
-                <button onclick="window.location.href='https://github.com/flkram/Hash-Cipher'">Hash Cipher</button>
-                <span>Skills and technologies used: JavaScript, Python, C++, PyTorch, Pandas, Machine Learning, Data Science </span>
-            </div>            
-            <div class="project">
-                <button onclick="window.location.href='https://github.com/flkram/game-hub'">Game Hub</button>
-                <span>Skills and technologies used: React, Django, MySQL, Python, JavaScript, Docker, CI/CD, RESTful, AWS</span>
-            </div>
-            <div class="project">
-                <button onclick="window.location.href='https://github.com/flkram/audio-player'">Audio Player</button>
-                <span>Skills and technologies used: Java, Golang, C++, JUnit, Swing, Linux VM, System Programming, Audio APIs</span>
-            </div>
-            <div class="project">
-                <button onclick="window.location.href='https://github.com/flkram/Sequence-Finder'">Sequence Finder</button>
-                <span>Skills and technologies used: C, CUDA, KVM, Hypervisors, GPU Computing, Concurrency </span>
-            </div>    
-            <div class="project">
-                <button onclick="window.location.href='https://github.com/flkram/wallet-shield'">Wallet Shield</button>
-                <span>Skills and technologies used: Python, Machine Learning, PyTorch, Hashing, Flask</span>
-            </div>                                    
-            <div class="project">
-                <button onclick="window.location.href='https://devpost.com/software/scandlendar'">Scandlendar</button>
-                <span>Skills and technologies used: Python, Flask, NLP, NLTK, Machine Learning, Google Cloud API</span>
-            </div>
-            <div class="project">
-                <button onclick="window.location.href='https://devpost.com/software/gradepuppet'">Grade Puppet</button>
-                <span>Skills and technologies used: Python, Django, Pandas, NLP, NLTK</span>
-            </div>
-            <div class="project">
-                <button onclick="window.location.href='https://github.com/flkram/onlineStoreTemplate'">Online Store Template</button>
-                <span>Skills and technologies used: Flask, MySQL, HTML, CSS, Python, Docker, Postman </span>
-            </div>              
-            <div class="project">
-                <button onclick="window.location.href='https://github.com/akmzry/corona-scope'">Corona Scope</button>
-                <span>Skills and technologies used: Python, Data Science, Statistics, Dash, Plotly, Pandas</span>
-            </div>
-            <div class="project">
-                <button onclick="window.location.href='https://github.com/flkram/Card_Mania'">Card Mania</button>
-                <span>Skills and technologies used: C#, .NET, Blazor, Azure, Cloud Computing</span>
-            </div>        
-            <div class="project">
-                <button onclick="window.location.href='https://replit.com/@mugicha101/Sanzu-TSA-States'">Sanzu</button>
-                <span>Skills and technologies used: HTML/CSS/JS, C++</span>
-            </div>                                    
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="logo-mark">AR</div>
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <!-- <a href="#skills" class="nav-link">Skills</a> -->
+            </nav>
+        </header>
 
-        </div>
-    </section>
-<section>
-    <h2>Skills</h2>
-    <li>Programming Languages: Python, Java, C-sharp, C++, C, GoLang, JavaScript</li>
-    <li>Technologies: Machine Learning, Data Science, NLP, NLTK, PyTorch, Pandas</li>
-    <li>Tools and Frameworks: Git, Docker, JUnit, Flask, React, Django, NodeJS, .NET</li>
-</section>
+        <main>
+            <section id="hero" class="hero">
+                <div class="hero-content">
+                    <div class="hero-avatar hero-avatar-large hero-avatar-top">
+                        <img src="headshot_pic.jpeg" alt="Headshot of Akash Ramaswamy" />
+                    </div>
+                    <h1>Akash Ramaswamy</h1>
+                    <p class="eyebrow"> Computer Science &middot; Software Engineering </p>
+                    <p class="hero-tagline">
+                        Hello! I am a developer interested in emerging technologies and exploring how they can be applied to real-world problems.
+                        I pick up new tools quickly, which has allowed me to work across a wide range of tech.
+                        Below is a rundown of my projects and experiences. Please feel free to reach out with any questions!
+                    </p>
+
+                    <div class="meta-pills">
+                        <span class="meta-pill">B.S. Computer Science @ NCSU</span>
+                        <span class="meta-pill">Software &middot; DevOps &middot; Cloud &middot; Infrastructure</span>
+                        <span class="meta-pill">Open-source &amp; Side Projects</span>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="primary-btn">View selected projects</a>
+                        <a href="#experience" class="primary-btn secondary-btn">View experiences</a>
+                    </div>
+                </div>
+
+                <div class="hero-panel">
+                    <div class="hero-card hero-card-large">
+                        <div class="hero-stat-grid hero-stat-grid-large">
+                            <div class="hero-stat">
+                                <p class="hero-stat-label">Projects</p>
+                                <p class="hero-stat-value">10+</p>
+                                <p class="hero-stat-caption">Academic, competitive, and personal projects</p>
+                            </div>
+                            <div class="hero-stat">
+                                <p class="hero-stat-label">Experiences</p>
+                                <p class="hero-stat-value">4+</p>
+                                <p class="hero-stat-caption">Research, education, and enterprise experiences</p>
+                            </div>
+                            <div class="hero-stat">
+                                <p class="hero-stat-label">Skills</p>
+                                <p class="hero-stat-value">10+</p>
+                                <p class="hero-stat-caption">Languages, libraries, and frameworks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="contact-card contact-card-top">
+                    <p class="section-kicker">Contact</p>
+                    <h2>Let&rsquo;s connect!</h2>
+                    <p class="contact-text">
+                        Please feel free to reach out to me through the following platforms and emails:
+                    </p>
+                    <div class="contact-actions">
+                        <a href="https://github.com/flkram" target="_blank" class="ghost-btn">GitHub</a>
+                        <a href="https://www.linkedin.com/in/akash-ramaswamy-/" target="_blank" class="primary-btn">LinkedIn</a>
+                        <a href="https://leetcode.com/u/23akashram/" target="_blank" class="ghost-btn">LeetCode</a>
+                    </div>
+                    <div class="contact-email-row">
+                        <span class="contact-email-pill-chip">aramasw4@ncsu.edu</span>
+                        <span class="contact-email-pill-chip">ramaswamyakash@gmail.com</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">Experience</p>
+                        <h2>Recent experience &amp; involvement</h2>
+                    </div>
+                    <p class="section-subtitle">
+                        High-level snapshots of teams I've worked with and the projects I contributed to
+                    </p>
+                </div>
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <div class="experience-header-row">
+                            <div class="experience-logo">
+                                <img src="ncsu-logo.png" alt="Extended Reality Labs logo" />
+                            </div>
+                            <div class="experience-meta">
+                                <div class="experience-heading">
+                                    <h3>Extended Horizon (XR) Lab</h3>
+                                    <span class="experience-tag neutral">XR lab &middot; NCSU</span>
+                                </div>
+                                <p class="experience-role">Software Development Researcher &middot; Aug 2025 &ndash; Present &middot; Raleigh, NC</p>
+                                <p class="experience-text">
+                                    The Extended Horizons Lab focuses on the intersection of VR/XR applications and AI, 
+                                    conducting research and development under Dr. Qiao Jin at NCSU.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience-subgrid">
+                            <article class="experience-subcard">
+                                <h4 class="experience-subtitle">Project - Classroom VR App</h4>
+                                <p class="experience-subtext">
+                                    Meta Quest classroom VR application using Unity, .NET Core, and integrated LLM</p>
+                            </article>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-header-row">
+                            <div class="experience-logo">
+                                <img src="lenovo-logo.png" alt="Lenovo logo" />
+                            </div>
+                            <div class="experience-meta">
+                                <div class="experience-heading">
+                                    <h3>Lenovo</h3>
+                                    <span class="experience-tag">Enterprise Partner Projects</span>
+                                </div>
+                                <p class="experience-role">Software Engineer Intern &middot; May 2025 &ndash; Aug 2025 &middot; Morrisville, NC</p>
+                                <p class="experience-text">
+                                    Worked with the ISG Solution Architect team in the Lenovo Data Center. We worked closely with Lenovo Enterprise partners.
+                                    My main three projects were with these partners, where we worked closely with them to design, implement, and test their desired infrastructure needs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience-subgrid">
+                            <article class="experience-subcard">
+                                <h4 class="experience-subtitle">Project - Vaidio AI</h4>
+                                <p class="experience-subtext">
+                                    Deployed internal application that integrates Vaidio's video analytics software on Lenovo servers with Docker
+                                </p>
+                            </article>
+                            <article class="experience-subcard">
+                                <h4 class="experience-subtitle">Project - Nokia</h4>
+                                <p class="experience-subtext">
+                                    Developed a Daemon script on Lenovo Jump server to connect with Nokia managed switches
+                                </p>
+                            </article>
+                            <article class="experience-subcard">
+                                <h4 class="experience-subtitle">Project - NVIDIA</h4>
+                                <p class="experience-subtext">
+                                   Worked with and authored NVIDIA’s GPU stack on Lenovo’s Hybrid AI 289 platform (mentioned in projects section)
+                                </p>
+                            </article>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-header-row">
+                            <div class="experience-logo">
+                                <img src="vogro-logo.png" alt="VoGro logo" />
+                            </div>
+                            <div class="experience-meta">
+                                <div class="experience-heading">
+                                    <h3>VoGro</h3>
+                                    <span class="experience-tag neutral">Volunteer Management Platform</span>
+                                </div>
+                                <p class="experience-role">Software Engineer &middot; May 2024 &ndash; Dec 2024 &middot; Remote</p>
+                                <p class="experience-text">
+                                    Startup ISV that develops software for streamlining volunteer management, handling scheduling, tracking, communication, and engagement workflows to help organizations run their operations more efficiently.                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience-subgrid">
+                            <article class="experience-subcard">
+                                <h4 class="experience-subtitle">Project - Data Visualization Feature</h4>
+                                <p class="experience-subtext">
+                                    Integrated data visualization feature using ReactJS and Django that allowed nonprofit coordinators to monitor volunteers
+                                </p>
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+                        <section id="projects" class="section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">Projects</p>
+                        <h2>Selected work</h2>
+                    </div>
+                    <p class="section-subtitle">
+                        A few representative projects that highlight how I think and build.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Quiz Generator</h3>
+                            <a href="https://tinyurl.com/qgen-extension/" target="_blank" class="project-link" aria-label="Open Quiz Generator">
+                                ?
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">WebExtension API</span>
+                            <span class="project-tag">async REST APIs</span>
+                            <span class="project-tag">GPT-4 and Gemini APIs</span>
+                            <span class="project-tag">LLM Integration</span>
+                            <span class="project-tag">Prompt chaining</span>
+                        </div>
+                        <p class="project-description">
+                            Developed a Chrome extension that parses webpage text (Manifest V3) and uses GPT-4/Gemini prompt-chaining to auto-generate contextual quizzes
+                        </p>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Hybrid AI 289</h3>
+                            <a href="https://tinyurl.com/289-platform/" target="_blank" class="project-link" aria-label="Open Hybrid AI 289">
+                                ?
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Terraform</span>
+                            <span class="project-tag">Kubernetes</span>
+                            <span class="project-tag">Helm</span>
+                            <span class="project-tag">NGINX</span>
+                            <span class="project-tag">TCP/IP Protocols</span>
+                        </div>
+                        <p class="project-description">
+                            Documented a scalable HPC platform with Terraform-provisioned infrastructure and Kubernetes workloads, then tested with synthetic AI/ML workloads
+                        </p>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Hash Cipher</h3>
+                            <a href="https://flkram.github.io/Hash-Cipher/" target="_blank" class="project-link" aria-label="Open Hash Cipher">
+                                ?
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">PyTorch</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Cryptography</span>
+                        </div>
+                        <p class="project-description">
+                            Deployed a Flask + C++ web app that hashes files/text into datasets while running PyTorch + Pandas password-strength analysis to surface weak credentials
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="other-projects" class="section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">Projects</p>
+                        <h2>Other work</h2>
+                    </div>
+                    <p class="section-subtitle">
+                        Older projects that explore different stacks, domains, and ideas.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Game Hub</h3>
+                            <a href="https://github.com/flkram/game-hub" target="_blank" class="project-link" aria-label="Open Game Hub">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">CI/CD</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Audio Player</h3>
+                            <a href="https://github.com/flkram/audio-player" target="_blank" class="project-link" aria-label="Open Audio Player">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Go</span>
+                            <span class="project-tag">Linux VM</span>
+                            <span class="project-tag">Audio APIs</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Sequence Finder</h3>
+                            <a href="https://github.com/flkram/Sequence-Finder" target="_blank" class="project-link" aria-label="Open Sequence Finder">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C/C++</span>
+                            <span class="project-tag">CUDA</span>
+                            <span class="project-tag">Hypervisors</span>
+                            <span class="project-tag">Concurrency</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Wallet Shield</h3>
+                            <a href="https://github.com/flkram/wallet-shield" target="_blank" class="project-link" aria-label="Open Wallet Shield">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">OAuth 2.0</span>
+                            <span class="project-tag">OIDC</span>
+                            <span class="project-tag">Hashing</span>
+
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Scandlendar</h3>
+                            <a href="https://devpost.com/software/scandlendar" target="_blank" class="project-link" aria-label="Open Scandlendar">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">NLTK</span>
+                            <span class="project-tag">GCP</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Grade Puppet</h3>
+                            <a href="https://devpost.com/software/gradepuppet" target="_blank" class="project-link" aria-label="Open Grade Puppet">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">NLTK</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Online Store Template</h3>
+                            <a href="https://github.com/flkram/onlineStoreTemplate" target="_blank" class="project-link" aria-label="Open Online Store Template">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Docker</span>
+                            <span class="project-tag">Postman</span>
+                        </div>
+                    </article>
+
+                    <!-- <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Corona Scope</h3>
+                            <a href="https://github.com/akmzry/corona-scope" target="_blank" class="project-link" aria-label="Open Corona Scope">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Data Science</span>
+                            <span class="project-tag">Statistics</span>
+                            <span class="project-tag">Dash</span>
+                            <span class="project-tag">Plotly</span>
+                            <span class="project-tag">Pandas</span>
+                        </div>
+                    </article> -->
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Card Mania</h3>
+                            <a href="https://github.com/flkram/Card_Mania" target="_blank" class="project-link" aria-label="Open Card Mania">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C#</span>
+                            <span class="project-tag">.NET</span>
+                            <span class="project-tag">Blazor</span>
+                            <span class="project-tag">Azure</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Sanzu</h3>
+                            <a href="https://replit.com/@mugicha101/Sanzu-TSA-States" target="_blank" class="project-link" aria-label="Open Sanzu">
+                                ↗
+                            </a>
+                        </div>
+                        <p class="project-tech-label">Stack</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">C++</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- <section id="skills" class="section">
+                <div class="section-header">
+                    <div>
+                        <p class="section-kicker">Skills</p>
+                        <h2>What I work with</h2>
+                    </div>
+                </div>
+                <div class="skill-columns">
+                    <div class="skill-group">
+                        <p class="skill-heading">Languages</p>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">Java</span>
+                            <span class="skill-chip">C#</span>
+                            <span class="skill-chip">C++</span>
+                            <span class="skill-chip">C</span>
+                            <span class="skill-chip">Go</span>
+                            <span class="skill-chip">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <p class="skill-heading">Frameworks &amp; libraries</p>
+                        <div class="skill-chips">
+                            <span class="skill-chip">React</span>
+                            <span class="skill-chip">Django</span>
+                            <span class="skill-chip">Flask</span>
+                            <span class="skill-chip">Node.js</span>
+                            <span class="skill-chip">.NET</span>
+                            <span class="skill-chip">JUnit</span>
+                            <span class="skill-chip">NLP &middot; NLTK</span>
+                            <span class="skill-chip">PyTorch</span>
+                            <span class="skill-chip">Pandas</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <p class="skill-heading">Tools &amp; platforms</p>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Git</span>
+                            <span class="skill-chip">Docker</span>
+                            <span class="skill-chip">MySQL</span>
+                            <span class="skill-chip">AWS</span>
+                            <span class="skill-chip">CI/CD</span>
+                            <span class="skill-chip">Linux</span>
+                            <span class="skill-chip">Cloud &amp; DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+        </main>
+
+        <footer class="footer">
+            <p>Designed &amp; built by Akash Ramaswamy.</p>
+        </footer>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const id = entry.target.id;
+                    const link = document.querySelector('.nav-link[href="#' + id + '"]');
+                    if (!link) return;
+                    if (entry.isIntersecting) {
+                        navLinks.forEach((l) => l.classList.remove('is-active'));
+                        link.classList.add('is-active');
+                    }
+                });
+            },
+            { rootMargin: '-55% 0px -40% 0px', threshold: 0.2 }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach((card) => {
+            const link = card.querySelector('.project-link');
+            if (!link) return;
+            const href = link.getAttribute('href');
+            const target = link.getAttribute('target') || '_self';
+            if (!href || href === '#') return;
+
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', (event) => {
+                if (event.defaultPrevented) return;
+                if (event.button !== 0) return;
+
+                if (event.metaKey || event.ctrlKey) {
+                    window.open(href, target === '_self' ? '_blank' : target);
+                } else {
+                    window.open(href, target);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
