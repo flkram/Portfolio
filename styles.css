@@ -472,8 +472,6 @@ p {
     width: 44px;
     height: 44px;
     flex-shrink: 0;
-    border-radius: 16px;
-    background: radial-gradient(circle at top left, rgba(148, 163, 184, 0.8), rgba(15, 23, 42, 1));
     display: flex;
     align-items: center;
     justify-content: center;
